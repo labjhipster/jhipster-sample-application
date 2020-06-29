@@ -117,6 +117,7 @@ public class DateTimeWrapper implements Serializable {
         return Objects.hashCode(getId());
     }
 
+    // prettier-ignore
     @Override
     public String toString() {
         return (
