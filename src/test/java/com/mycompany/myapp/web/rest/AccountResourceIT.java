@@ -141,11 +141,7 @@ public class AccountResourceIT {
     @Transactional
     public void testRegisterInvalidLogin() throws Exception {
         ManagedUserVM invalidUser = new ManagedUserVM();
-<<<<<<< HEAD
-        invalidUser.setLogin("funky-log!n"); // <-- invalid
-=======
         invalidUser.setLogin("funky-log(n");// <-- invalid
->>>>>>> jhipster_upgrade
         invalidUser.setPassword("password");
         invalidUser.setFirstName("Funky");
         invalidUser.setLastName("One");
@@ -683,14 +679,9 @@ public class AccountResourceIT {
         user.setEmail("password-reset-upper-case@example.com");
         userRepository.saveAndFlush(user);
 
-<<<<<<< HEAD
-        restAccountMockMvc
-            .perform(post("/api/account/reset-password/init").content("password-reset@EXAMPLE.COM"))
-=======
         restAccountMockMvc.perform(post("/api/account/reset-password/init")
             .content("password-reset-upper-case@EXAMPLE.COM")
 )
->>>>>>> jhipster_upgrade
             .andExpect(status().isOk());
     }
 

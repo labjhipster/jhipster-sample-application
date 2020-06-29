@@ -18,11 +18,8 @@ import org.springframework.context.annotation.*;
 @Configuration
 @EnableCaching
 public class CacheConfiguration {
-<<<<<<< HEAD
-=======
     private GitProperties gitProperties;
     private BuildProperties buildProperties;
->>>>>>> jhipster_upgrade
     private final javax.cache.configuration.Configuration<Object, Object> jcacheConfiguration;
 
     public CacheConfiguration(JHipsterProperties jHipsterProperties) {
@@ -60,8 +57,6 @@ public class CacheConfiguration {
             cm.createCache(cacheName, jcacheConfiguration);
         }
     }
-<<<<<<< HEAD
-=======
 
     @Autowired(required = false)
     public void setGitProperties(GitProperties gitProperties) {
@@ -77,5 +72,4 @@ public class CacheConfiguration {
     public KeyGenerator keyGenerator() {
         return new PrefixedKeyGenerator(this.gitProperties, this.buildProperties);
     }
->>>>>>> jhipster_upgrade
 }
