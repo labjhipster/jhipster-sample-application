@@ -5,21 +5,13 @@ import static org.hamcrest.Matchers.hasItem;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.mycompany.myapp.JhipsterSampleApplicationApp;
-<<<<<<< HEAD
-import com.mycompany.myapp.config.audit.AuditEventConverter;
-import com.mycompany.myapp.domain.PersistentAuditEvent;
-import com.mycompany.myapp.repository.PersistenceAuditEventRepository;
-import com.mycompany.myapp.security.AuthoritiesConstants;
-import com.mycompany.myapp.service.AuditEventService;
-import io.github.jhipster.config.JHipsterProperties;
 import java.time.Instant;
-=======
+
+import com.mycompany.myapp.JhipsterSampleApplicationApp;
 import com.mycompany.myapp.domain.PersistentAuditEvent;
 import com.mycompany.myapp.repository.PersistenceAuditEventRepository;
 import com.mycompany.myapp.security.AuthoritiesConstants;
 
->>>>>>> jhipster_upgrade
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

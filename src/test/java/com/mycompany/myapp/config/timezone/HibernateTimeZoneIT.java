@@ -47,11 +47,6 @@ public class HibernateTimeZoneIT {
         dateTimeWrapper.setOffsetTime(OffsetTime.parse("14:30:00+02:00"));
         dateTimeWrapper.setLocalDate(LocalDate.parse("2016-09-10"));
 
-<<<<<<< HEAD
-        dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.S").withZone(ZoneId.of("UTC"));
-
-        timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss").withZone(ZoneId.of("UTC"));
-=======
         dateTimeFormatter = DateTimeFormatter
             .ofPattern("yyyy-MM-dd HH:mm:ss.S")
             .withZone(ZoneId.of(zoneId));
@@ -59,7 +54,6 @@ public class HibernateTimeZoneIT {
         timeFormatter = DateTimeFormatter
             .ofPattern("HH:mm:ss")
             .withZone(ZoneId.of(zoneId));
->>>>>>> jhipster_upgrade
 
         dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     }
